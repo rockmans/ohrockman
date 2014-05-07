@@ -17,12 +17,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c)&c_o*y=brx!lix^=imf%(e=_#556$y)@9e8)b8ys@(=n6qt3'
+SECRET_KEY = 'c)&c_o*y=rag!lix^=imf%(e=_#543$y)@1e9)a8zd@(=n6qt3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-TEMPLATE_DEBUG = True
+if os.environ.has_key('DJANGO_DEBUG') and os.environ['DJANGO_DEBUG'] != '0':
+    DEBUG = True
+    TEMPLATE_DEBUG = True
+else:
+    DEBUG = False
+    TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -36,6 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'familytree'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,7 +63,7 @@ WSGI_APPLICATION = 'ohrockman.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'data', 'family.db'),
     }
 }
 
