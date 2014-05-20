@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Kyle Rockman -- WebDev -- rocktavious
+    Lawrence Rockman -- Data Manager -- littlerock
+
+# THANKS
+
+    Kyle and Lawrence Rockman
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr

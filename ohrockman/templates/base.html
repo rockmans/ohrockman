@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+#########################################################################################
+
+		This website is dynamically built
+
+			Coded and Designed By: Kyle L Rockman
+			Content Management By: Lawrence L Rockman
+			
+#########################################################################################
+ -->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	{% load staticfiles %}
+	<link href="{% static "css/basic.css" %}" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#banner{
+			background-image:url({% static "images/OHBanner.gif" %});
+		}
+		#logo{
+			background-image:url({% static "images/COA_Prussia_web.gif" %});
+		}
+		#logo2{
+			background-image:url({% static "images/COA_Germ_web.gif" %});
+		}
+	</style>
+	<!-- Additional Header Block -->
+	{% block Header %}
+	{% endblock %}
+	<!-- End Additional Header Block -->
+
+	<!-- Title Block -->
+	<title>
+		{% block Title %}
+		Oscar &amp; Helen Rockman
+		{% endblock %}
+	</title>
+	<!-- End Title Block -->
+
+</head>
+<body>
+{% spaceless %}
+	<div id="wrapper">
+		<a href="/">
+			<div id="logo">
+				
+			</div>
+		</a>
+		<a href="/">
+			<div id="logo2">
+				
+			</div>
+		</a>
+		<a href="/">
+			<div id="banner">
+			
+			</div>
+		</a>
+		
+		<!-- Navigation Block -->
+		{% block Nav %}
+		&nbsp;
+		{% endblock %}
+		<!-- End Navigation Block -->
+
+		
+		<!-- Content Block -->
+		<div id="content">
+			{% block Content %}
+			&nbsp;
+			{% endblock %}
+		</div>
+		<!-- End Content Block -->
+		
+		<!-- Footer Block -->
+		<div id="footer">
+			{% block Footer %}
+			Brought to you by the Rockman Family - &copy; 2011.
+			{% endblock %}
+		</div>
+		<!-- End Footer Block -->
+
+	</div>
+{% endspaceless %}
+</body>
+</html>

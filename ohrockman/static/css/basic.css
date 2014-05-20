@@ -1,0 +1,464 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	background-color: none;
+	font: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+}
+*#{
+	color: #000;
+	text-align: left;
+}
+body{
+	background-color: #333;
+}
+
+img{
+	border: 2px solid #000;
+}
+
+blockquote{
+	margin: 0 auto;
+	width: 50%;
+	padding: 5px;
+	background-color: #FFFF99;
+	border: dotted 2px #FF9900;
+}
+
+/* Heading 1 */
+h1{
+	
+	font-size: 20px;
+	font-weight: bold;
+	font-style:italic;
+	padding: 0;
+	margin: 0;
+}
+/* Heading 2 */
+h2{
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+/* paragraph font */
+h3{
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+/* caption font */
+h4{
+	font-size: 12px;	
+}
+/* start link tags */
+a:visited {
+	color: #359;
+	text-decoration: none;
+}
+a:link {
+	color: #359;
+	text-decoration: none;
+}
+a:hover {
+	color: #955;
+	text-decoration: underline;
+}
+
+#wrapper{
+	width: auto;
+	min-width: 770px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px 0 5px 0;
+/*	background-color: #F2E2C2;*/
+	background-color: #FFD;
+}
+#banner{
+	margin: 0 auto 0 auto;
+	padding: 0;
+	height: 130px;
+	width: 420px;
+	background-image: url(/media/images/OHBanner.gif);
+	background-repeat: no-repeat;
+	position: relative;	
+}
+#logo{
+	margin: 0 0 0 10px;
+	padding: 0;
+	width: 100px;
+	height: 120px;
+	float: left;
+	background-image:url(/media/images/COA_Prussia_web.gif);
+	background-repeat:no-repeat;
+}
+#logo2{
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 100px;
+	height: 120px;
+	float: right;
+	background-image:url(/media/images/COA_Germ_web.gif);
+	background-repeat:no-repeat;
+}
+
+#navbar {
+	padding: 2px 0;
+	text-align: center;
+	color: #000;
+	background-color: #359;
+}
+.navlarger{
+	font-size: 24px;
+}
+.navsmaller {
+	font-size: 16px;
+}
+#navbar a {
+	margin: 0 15px;
+}
+#navbar a:visited {
+	color: #FFD;
+	text-decoration: none;
+}
+#navbar a:link {
+	color: #FFD;
+	text-decoration: none;
+}
+#navbar a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+
+#content{
+	clear both;
+	border-left: 10px solid #FFD;
+	border-right: 10px solid #FFD;
+	margin: 20px 0 0 0;
+	/*background-color: #444;*/
+}
+
+#footer{
+	width: auto;
+	margin: 0;
+	padding: 20px 0 0 0;
+	text-align:center;
+	clear: both;
+}
+
+#center {
+	width: auto;
+	text-align: center;
+	/*background-color: #666;*/
+}
+
+#memberEntry {
+	margin: 0;
+	width: 100%;
+	/*background-color: #711;*/
+}
+
+#memberInfo {
+	margin: 0 10px;
+	padding: 0;
+	text-align: left;	
+	width: auto;
+}
+
+#memberEntryFooter{
+	margin: 0 0 1em 0;
+	clear: both;
+}
+
+#article {
+	margin: 0 auto;
+	padding: 0;
+	/*background-color: #252;*/
+}
+
+#articleHeader {
+	text-align: center;
+	boarder-bottom: 2px solid #000;
+	/*background-color: #922;*/
+}
+
+#articleSnippet {
+	margin: 0 5px 15px 5px;
+	padding: 0;
+	width: 32%;
+	height: 200px;
+	float: left;
+	/*background-color: #177;*/
+}
+
+#articleBody {
+	
+	margin: 20px auto 0 auto;
+	padding: 0;
+	text-align: left;
+	/*background-color: #814;*/
+}
+
+#left50 {
+	width: 48%;
+	clear: left;
+	float: left;
+	text-align: center;
+	/*background-color: #171;*/
+}
+
+#right50 {
+	width: 48%;
+	clear: right;
+	float: right;
+	text-align: center;
+	/*background-color: #911;*/
+}
+
+#textCenter75 {
+	margin: 0 auto;
+	width: 75%;
+	clear: both;
+	text-align: left;
+	/*background-color: #591;*/
+}
+
+#textLeft75{
+	width: 70%;
+	clear: left;
+	float: left;
+	text-align: left;
+	/*background-color: #591;*/
+}
+
+#textRight75{
+	width: 70%;
+	clear: Right;
+	float: Right;
+	text-align: left;
+	/*background-color: #591;*/
+}
+
+#textLeft50 {
+	width: 48%;
+	clear: left;
+	float: left;
+	text-align: left;
+	/*background-color: #171;*/
+}
+
+#textRight50 {
+	width: 48%;
+	clear: right;
+	float: right;
+	text-align: left;
+	/*background-color: #911;*/
+}
+
+#textLeft25{
+	width: 23%;
+	clear: left;
+	float: left;
+	text-align: left;
+	/*background-color: #171;*/
+}
+
+#textRight25{
+	width: 23%;
+	clear: Right;
+	float: Right;
+	text-align: left;
+	/*background-color: #171;*/
+}
+
+#pictureViewer {
+	padding: 5px;
+	text-align: left;
+	display: none;
+	border: 2px solid #000;
+	/*background-color: #517;*/
+}
+
+.clear{
+	clear: both;
+}
+
+.red {
+	color: red;
+}
+
+.redBKG {
+	background-color: red;
+}
+
+.largerH2 {
+	font-size: 24px;
+}
+
+.largerItalicH2{
+	font-size: 24px;
+	font-style: italic;
+}
+
+.smallerH2 {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.smallerItalicH2 {
+	font-size: 18px;
+	font-style: italic;
+}
+
+.boldH3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.floatLeft {
+	margin: 0 10px 0 0 ;
+	float: Left;
+}
+
+.floatRight {
+	margin: 0 0 0 10px ;
+	float: Right;
+}
+.italic{
+	font-style: italic;
+}
+.bold{
+	font-style: oblique;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.width75 {
+	width: 75%;
+}
+
+
+
+
+
+
+
+#navtree{
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+}
+#navtree ul{
+	margin: 5px 0;
+	padding: 10px 5px;
+}
+#navtree ul li{
+	margin: 0;
+	padding: 3px 5px;
+	display: inline;
+}
+#navtree ul li a{
+	margin: 0;
+	padding: 2px 5px;
+	background-color: #36C;
+	font-size: 14px;
+	text-decoration: none;
+	color: #FFC;
+}
+#navtree ul li a:hover{
+	background-color: #663333;
+}	
+
+#oscarhelentree, #myrontree, #annatree, #haroldtree, #donaldtree, #dorothytree, #virginatree, #reginaldtree, #helentree, #joycetree, #loistree{
+	margin: 0 0 0 175px;
+	padding: 0;
+	height: 353px;
+	width: 420px;
+	background-color: #DDCCAA;
+	border: 2px solid #000;
+}
+#dedication{
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+#mainbox{
+	margin: 0 0 0 175px;
+	padding: 0;
+	width: 420px;
+}
+#desendanttext{
+	margin: 10px 0 20px 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	width: 420px;
+}
+#familygroupsheet{
+	margin: 10px 0 10px 0;
+	padding: 0 0 10px 0;
+	text-align: left;	
+	width: 420px;
+}
+#aboutfamily1, #aboutfamily2, #aboutfamily3{
+	margin: 0 0 0 5px;
+	padding: 0;
+	text-align: left;
+	width: 410px;
+}
+#aboutfamilyclose{
+	margin: 0;
+	padding: 0 5px 0 0;
+	font-size: 9px;
+	text-align: right;
+	width: 405px;
+}
+#marriage{
+	margin: 0;
+	padding: 0;	
+	float: right;
+}
+#decendentinfo, #decendentinfo1, #decendentinfo2, #decendentinfo3, #decendentinfo4, #decendentinfo5, #decendentinfo6, #decendentinfo7, #decendentinfo8, #decendentinfo9, #decendentinfo10, #decendentinfo11, #decendentinfo12{
+	margin: 0 0 0 15px;
+	padding: 0;
+	text-align: left;	
+	width: 250px;
+}
+#decedentpic{
+	margin: 0;
+	padding: 0;
+	border: 2px solid #000;	
+	width: 150px;
+	float: right;
+}
+#decendentspouseinfo{
+	margin: 0;
+	padding: 0;
+	text-align: left;	
+	width: 350px;
+}
+/* start classes */
+.hidden{
+	display: none;
+}
+.visible{
+	display: block;
+}
+.clear{
+	clear: both;
+}
+.centered {
+	text-align: center;
+}
+.centitalic {
+	text-align: center;
+	font-style: italic;
+}
+.italic {
+	font-style: italicl
+}
+/* start font tags*/

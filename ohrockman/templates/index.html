@@ -1,0 +1,27 @@
+{% extends "base_with_nav.html" %}
+
+{% block Content %}
+{% load staticfiles %}
+<div id="center">
+<div id="left50">
+<img src="{% static "images/FamilyHome.jpg" %}" />
+</div>
+<div id="textRight50">
+<h2>Dedication</h2>
+<hr noshade>
+<br />
+<h3><strong>This site is dedicated first of all to the many ancestors who's blood still runs through our veins. You have blazed trails for us to follow and we have kept the heritage passed down through the years, we honor this volume. Secondly, to the many Rockman relatives with whom we have had the privilege of sharing life's journey. May this record  help keep many special memories alive and many special people connected. Finally to our future descendents, those who will be born into a great family. Hopefully this work provides a sense of foundation, a roadmap from whence you came.</strong></h3>
+<br />
+<h3><strong>A very special &quot;Thank You&quot; to Jerry Rockman for taking the time and effort to research and develop this history. Without your persistence in collecting the necessary information and pictures, this work would not have been completed. The sacrifice of hours and labor are appreciated more than you know!</strong></h3>
+</div>
+</div>
+<br />
+<br />
+<div id="left50">
+{% include "personal_info.html" with family_member=oscar marriage=None descendant=1 %}
+</div>
+<div id="right50">
+{% include "personal_info.html" with family_member=helen marriage=None descendant=None %}
+</div>
+
+{% endblock %}

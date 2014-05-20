@@ -52,3 +52,15 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+
+/data/
+
+/family.db
+
+/ohrockman/local_settings.py
+
+/static/
+
+/.virtualenv
+
+/backup/
