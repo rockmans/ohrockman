@@ -85,7 +85,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-print STATIC_ROOT
 STATIC_URL = 'http://media.ohrockman.com/static/'
 
 TEMPLATE_DIRS = (
