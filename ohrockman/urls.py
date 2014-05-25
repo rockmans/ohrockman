@@ -6,9 +6,8 @@ from ohrockman import views
 
 urlpatterns = patterns('',
     # Examples:
-    #url(r'^$', views.index, name='index'),
-    url(r'^$', views.maintainence, name='maintainence'),
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^$', views.index, name='index'),
+    #url(r'^$', views.maintainence, name='maintainence'),
     url(r'^familytree/', include('familytree.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
