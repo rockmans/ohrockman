@@ -14,10 +14,6 @@ body{
 	background-color: #333;
 }
 
-img{
-	border: 2px solid #000;
-}
-
 blockquote{
 	margin: 0 auto;
 	width: 50%;
@@ -81,9 +77,8 @@ a:hover {
 	padding: 0;
 	height: 130px;
 	width: 420px;
-	background-image: url(/media/images/OHBanner.gif);
 	background-repeat: no-repeat;
-	position: relative;	
+	position: relative;
 }
 #logo{
 	margin: 0 0 0 10px;
@@ -91,7 +86,6 @@ a:hover {
 	width: 100px;
 	height: 120px;
 	float: left;
-	background-image:url(/media/images/COA_Prussia_web.gif);
 	background-repeat:no-repeat;
 }
 #logo2{
@@ -100,7 +94,6 @@ a:hover {
 	width: 100px;
 	height: 120px;
 	float: right;
-	background-image:url(/media/images/COA_Germ_web.gif);
 	background-repeat:no-repeat;
 }
 
@@ -134,10 +127,9 @@ a:hover {
 
 
 #content{
-	clear both;
-	border-left: 10px solid #FFD;
-	border-right: 10px solid #FFD;
+	clear: both;
 	margin: 20px 0 0 0;
+	padding: 0 10px;
 	/*background-color: #444;*/
 }
 
@@ -150,8 +142,7 @@ a:hover {
 }
 
 #center {
-	width: auto;
-	text-align: center;
+	text-align:center;
 	/*background-color: #666;*/
 }
 
@@ -161,11 +152,117 @@ a:hover {
 	/*background-color: #711;*/
 }
 
-#memberInfo {
-	margin: 0 10px;
-	padding: 0;
+#center_card {
+	padding: 0 25%;
+}
+
+#member_card {
+	margin: 0 0 10px 0;
+	padding: 0 0 0px 0;
 	text-align: left;	
-	width: auto;
+	min-width: 350px;
+	max-width: 600px;
+	height: 100%;
+	border: 2px solid #000;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #FFD;
+}
+#member_card img {
+	margin: 0 0 0 10px;
+	clear: right;
+	float: right;
+	text-align: center;
+}
+
+#member_card a:visited {
+	color: #FFD;
+	text-decoration: none;
+}
+#member_card a:link {
+	color: #FFD;
+	text-decoration: none;
+}
+#member_card a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#member_card_banner{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: left;
+	float: left;
+	text-align: center;
+	border-bottom: 2px solid #000;
+	background-color: #359;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#member_card_banner_descendant{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: left;
+	float: left;
+	text-align: center;
+	border-bottom: 2px solid #000;
+	background-color: #955;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#member_card_banner_inlaw{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: left;
+	float: left;
+	text-align: center;
+	border-bottom: 2px solid #000;
+	background-color: #595;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#member_card_info{
+	padding: 0 0 0 5px;
+	clear: left;
+}
+
+#member_card_info a:visited {
+	color: #359;
+	text-decoration: none;
+}
+#member_card_info a:link {
+	color: #359;
+	text-decoration: none;
+}
+#member_card_info a:hover {
+	color: #955;
+	text-decoration: underline;
+}
+
+#member_card_footer{
+	clear: both;
 }
 
 #memberEntryFooter{
@@ -181,7 +278,7 @@ a:hover {
 
 #articleHeader {
 	text-align: center;
-	boarder-bottom: 2px solid #000;
+	border-bottom: 2px solid #000;
 	/*background-color: #922;*/
 }
 
