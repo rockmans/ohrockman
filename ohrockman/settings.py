@@ -58,16 +58,6 @@ ROOT_URLCONF = 'ohrockman.urls'
 WSGI_APPLICATION = 'ohrockman.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(DB_ROOT, 'family.db'),
-    }
-}
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -87,6 +77,10 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'http://media.ohrockman.com/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
+
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates')
 )
@@ -96,6 +90,10 @@ try:
 except ImportError:
     pass
 
+
+# Database
+# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
+# Needs to happen after the local_settings import so we can override DB_ROOT if needed
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
