@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.join(BASE_DIR, 'ohrockman')
-DB_ROOT = '/Volumes/STORAGE/Database/ohrockman'
+DB_ROOT = '/www/database/ohrockman'
 
 DEBUG = False
 TEMPLATE_DEBUG = False
@@ -26,9 +26,7 @@ SECRET_KEY = 'c)&c_o*y=rag!lix^=imf%(e=_#543$y)@1e9)a8zd@(=n6qt3'
 
 
 ALLOWED_HOSTS = ['www.ohrockman.com',
-                 'ohrockman.com',
-                 'media.ohrockman.com',
-                 'localhost']
+                 'ohrockman.com']
 
 
 # Application definition
