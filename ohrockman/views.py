@@ -13,6 +13,9 @@ def index(request):
 def maintainence(request):
     return render(request, 'maintainence.html', {})
 
+def reunion(request):
+    return render(request, 'reunion.html', {})
+
 def family_member(request, member_id):
     person = get_object_or_404(FamilyMember, pk=member_id)
     marriages = Marriage.objects.marriage_with(person)

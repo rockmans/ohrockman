@@ -13,5 +13,6 @@ urlpatterns = patterns('',
     
     
     url(r'^familytree/search', views.family_member_search),
+    url(r'^reunion/$', views.reunion),
     url(r'^admin/', include(admin.site.urls)),
 )
