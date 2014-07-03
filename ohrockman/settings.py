@@ -15,7 +15,7 @@ PROJECT_ROOT = os.path.join(BASE_DIR, 'ohrockman')
 DB_ROOT = '/www/database/ohrockman'
 
 DEBUG = True
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 
 # Quick-start development settings - unsuitable for production
