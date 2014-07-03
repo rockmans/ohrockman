@@ -14,8 +14,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.join(BASE_DIR, 'ohrockman')
 DB_ROOT = '/www/database/ohrockman'
 
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 
 # Quick-start development settings - unsuitable for production
@@ -39,7 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'debug_toolbar',
     'familytree',
 )
 
