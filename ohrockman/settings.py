@@ -27,7 +27,8 @@ SECRET_KEY = 'c)&c_o*y=rag!lix^=imf%(e=_#543$y)@1e9)a8zd@(=n6qt3'
 
 ALLOWED_HOSTS = ['www.ohrockman.com',
                  'ohrockman.com',
-                 'localhost']
+                 'localhost',
+                 'localhost:9091']
 
 
 # Application definition
