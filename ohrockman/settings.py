@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.join(BASE_DIR, 'ohrockman')
 DB_ROOT = '/www/database/ohrockman'
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False
 
 
