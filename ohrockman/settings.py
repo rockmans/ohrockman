@@ -18,12 +18,8 @@ DEBUG = True
 TEMPLATE_DEBUG = False
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c)&c_o*y=rag!lix^=imf%(e=_#543$y)@1e9)a8zd@(=n6qt3'
+with open(os.path.join(BASE_DIR, 'key.txt')) as f:
+    SECRET_KEY = f.read().strip()
 
 
 ALLOWED_HOSTS = ['www.ohrockman.com',
@@ -48,6 +44,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'photologue',
+    'south',
+    'sortedm2m',    
     'debug_toolbar',
     'familytree',
 )
@@ -93,6 +92,10 @@ STATICFILES_DIRS = (
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates')
+)
+from photologue import PHOTOLOGUE_APP_DIR
+TEMPLATE_DIRS = (
+    PHOTOLOGUE_APP_DIR,
 )
 
 try:
