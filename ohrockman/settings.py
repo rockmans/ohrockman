@@ -90,11 +90,9 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-TEMPLATE_DIRS = (
-    os.path.join(PROJECT_ROOT, 'templates')
-)
 from photologue import PHOTOLOGUE_APP_DIR
 TEMPLATE_DIRS = (
+    os.path.join(PROJECT_ROOT, 'templates'),
     PHOTOLOGUE_APP_DIR,
 )
 
