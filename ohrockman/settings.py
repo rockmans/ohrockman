@@ -14,8 +14,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.join(BASE_DIR, 'ohrockman')
 DB_ROOT = '/www/database/ohrockman'
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = False
+DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,6 +30,13 @@ ALLOWED_HOSTS = ['www.ohrockman.com',
                  'ohrockman.com',
                  'localhost',
                  'localhost:9091']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(DB_ROOT, 'family.db'),
+    }
+}
 
 
 # Application definition
@@ -71,6 +79,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE_ID = 1
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
@@ -89,16 +99,3 @@ try:
     from ohrockman.local_settings import *
 except ImportError:
     pass
-
-
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-# Needs to happen after the local_settings import so we can override DB_ROOT if needed
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(DB_ROOT, 'family.db'),
-    }
-}
-
-
