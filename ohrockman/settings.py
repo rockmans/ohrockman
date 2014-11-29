@@ -66,11 +66,14 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'raven.contrib.django.raven_compat',
+    'django.contrib.sites',
+
     'photologue',
     'south',
-    'sortedm2m',    
+    'sortedm2m',
     'debug_toolbar',
+    'raven.contrib.django.raven_compat',
+    
     'familytree',
 )
 
