@@ -8,3 +8,4 @@ django-sortedm2m==0.7.0
 pillow==2.4.0
 pytz==2014.4
 sqlparse==0.1.11
+raven==5.1.1
