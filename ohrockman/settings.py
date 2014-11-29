@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 APP_ENV = os.environ.get('APP_ENV', 'local')
 PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
-REMOTE_ROOT = '/usr/local/kyleandemily'
+REMOTE_ROOT = '/usr/local/ohrockman'
 
 if APP_ENV == "local":
     DB_ROOT = PROJECT_DIR
