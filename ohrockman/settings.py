@@ -121,10 +121,10 @@ else:
 
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static'),
+    os.path.join(PROJECT_DIR, 'ohrockman', 'static'),
 )
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, 'templates'),
+    os.path.join(PROJECT_DIR, 'ohrockman', 'templates'),
     PHOTOLOGUE_APP_DIR,
 )
 
