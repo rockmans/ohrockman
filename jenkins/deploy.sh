@@ -32,7 +32,10 @@ fi
 ln -snf "$APP_DIR" "$TEST_APP_DIR"
 cd "$TEST_APP_DIR"
 python manage.py collectstatic --noinput
-python manage.py migrate --noinput
+python manage.py syncdb --noinput
+python manage.py syncdb --noinput --database="photos"
+#python manage.py syncdb --noinput --database="familytree"
+python manage.py migrate photologue --noinput --database="photos"
 
 ln -snf "$APP_DIR" "$ACTIVE_APP_DIR"
 ln -snf "$VENV_DIR" "$ACTIVE_VENV_DIR"

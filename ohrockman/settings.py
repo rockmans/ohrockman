@@ -53,9 +53,9 @@ DATABASES = {
         'NAME': os.path.join(DB_ROOT, 'photo.db'),
     }
 }
-# DATABASE_ROUTERS = [
-#     'kyleandemily.wedding.db_router.PhotologueRouter',
-# ]
+DATABASE_ROUTERS = [
+    'ohrockman.db_router.PhotologueRouter',
+]
 
 # Application definition
 

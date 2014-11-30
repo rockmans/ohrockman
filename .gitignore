@@ -49,3 +49,4 @@ docs/_build/
 /.virtualenv
 /backup/
 .DS_Store
+*.db
