@@ -32,7 +32,7 @@ fi
 ln -snf "$APP_DIR" "$TEST_APP_DIR"
 cd "$TEST_APP_DIR"
 python manage.py collectstatic --noinput
-#python manage.py migrate --noinput
+python manage.py migrate --noinput
 
 ln -snf "$APP_DIR" "$ACTIVE_APP_DIR"
 ln -snf "$VENV_DIR" "$ACTIVE_VENV_DIR"
