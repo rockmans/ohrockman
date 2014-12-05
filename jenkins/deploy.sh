@@ -39,8 +39,8 @@ ln -snf "$VENV_DIR" "$ACTIVE_VENV_DIR"
 cd "$ACTIVE_APP_DIR"
 python manage.py collectstatic --noinput
 python manage.py migrate --noinput
-python manage.py migrate --database="familytree" --noinput
-python manage.py migrate --database="photos" --noinput
+#python manage.py migrate --database="familytree" --noinput
+#python manage.py migrate --database="photos" --noinput
 
 cp -f "$WORKSPACE/jenkins/nginx.conf" "/etc/nginx/sites-enabled/$PROJECT_NAME.conf"
 cp -f "$WORKSPACE/jenkins/uwsgi_$APP_ENV.ini" "/usr/local/uwsgi/confs/${PROJECT_NAME}_$APP_ENV.ini"
