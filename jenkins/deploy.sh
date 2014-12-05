@@ -37,7 +37,7 @@ ln -snf "$APP_DIR" "$ACTIVE_APP_DIR"
 ln -snf "$VENV_DIR" "$ACTIVE_VENV_DIR"
 
 cd "$ACTIVE_APP_DIR"
-if [[ ! -e "$DB_DIR" ]]
+if [[ ! -e "$DB_DIR/default.db" ]]
 then
   python manage.py migrate --noinput
   python manage.py migrate --database="photos" --noinput
