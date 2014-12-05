@@ -61,7 +61,7 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'raven.contrib.django.raven_compat',
     
-    #'familytree',
+    'familytree',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -140,9 +140,6 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'ohrockman', 'templates'),
     PHOTOLOGUE_APP_DIR,
 )
-#FIXTURE_DIRS = (
-#    os.path.join(PROJECT_DIR, 'ohrockman', 'fixtures'),
-#)
 
 if APP_ENV == "prod":
     RAVEN_CONFIG = {
