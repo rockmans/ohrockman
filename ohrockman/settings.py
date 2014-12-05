@@ -140,9 +140,9 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'ohrockman', 'templates'),
     PHOTOLOGUE_APP_DIR,
 )
-FIXTURE_DIRS = (
-    os.path.join(PROJECT_DIR, 'ohrockman', 'fixtures'),
-)
+#FIXTURE_DIRS = (
+#    os.path.join(PROJECT_DIR, 'ohrockman', 'fixtures'),
+#)
 
 if APP_ENV == "prod":
     RAVEN_CONFIG = {
