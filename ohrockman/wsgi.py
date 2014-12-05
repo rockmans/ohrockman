@@ -1,20 +1,13 @@
 """
-WSGI config for kyleandemily project.
+WSGI config for ohrockman project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 """
+
 import os
-import sys
-try:
-    activate_this = os.path.join(os.getcwd(), '.virtualenv', 'bin', 'activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-except:
-    pass
-sys.path.append(os.getcwd())
-    
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ohrockman.settings")
 
