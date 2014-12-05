@@ -1,7 +1,9 @@
 from django.http import HttpResponse, Http404
+from django.template import RequestContext, loader
 from django.shortcuts import get_object_or_404, render_to_response, render
 from django.shortcuts import render
 
+from photologue.models import Gallery
 from familytree.models import FamilyMember, Marriage
 
 
@@ -31,3 +33,13 @@ def family_member_search(request):
         raise Http404
         #return HttpResponse('Search Fields were %s - %s - %s - %s'%(first_name, middle_name, last_name, maiden_name)) 
     return render_to_response('member_list.html', {'person_list':person_list})
+
+def gallery(request):
+
+    wedding_photos = Gallery.objects.filter(tags='wedding')
+
+    template = loader.get_template('gallery.html')
+    context = RequestContext(request, {
+        'object_list': wedding_photos,
+    })
+    return HttpResponse(template.render(context))

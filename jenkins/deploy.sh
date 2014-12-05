@@ -39,6 +39,7 @@ ln -snf "$VENV_DIR" "$ACTIVE_VENV_DIR"
 cd "$ACTIVE_APP_DIR"
 if [[ ! -e "$DB_DIR/default.db" ]]
 then
+  # Perform initial migration
   python manage.py migrate --noinput || true
   python manage.py migrate --database="photos" --noinput || true
   python manage.py migrate --noinput

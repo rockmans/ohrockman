@@ -25,6 +25,8 @@
 			background-image:url({% static "images/COA_Germ_web.gif" %});
 		}
 	</style>
+         <script type="text/javascript" src="{% static 'base/js/vendor/jquery-1.11.0.min.js' %}"></script>
+
 	<!-- Additional Header Block -->
 	{% block Header %}
 	{% endblock %}
@@ -57,13 +59,7 @@
 			
 			</div>
 		</a>
-		
-		<!-- Navigation Block -->
-		{% block Nav %}
-		&nbsp;
-		{% endblock %}
-		<!-- End Navigation Block -->
-
+		{% include 'nav.html'%}
 		
 		<!-- Content Block -->
 		<div id="content">
