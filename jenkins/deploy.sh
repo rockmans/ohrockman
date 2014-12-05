@@ -40,7 +40,7 @@ cd "$ACTIVE_APP_DIR"
 if [[ ! -e "$DB_DIR/default.db" ]]
 then
   python manage.py migrate --noinput
-  python manage.py migrate --database="photos" --noinput
+  python manage.py migrate --database="photos" --noinput || true
   python manage.py migrate --noinput
   python manage.py migrate --database="familytree" --noinput
   python manage.py loaddata backup_2014_12_05.json --database="familytree"
