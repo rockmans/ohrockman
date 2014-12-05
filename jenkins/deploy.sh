@@ -45,7 +45,7 @@ then
   python manage.py migrate --database="familytree" --noinput
   python manage.py loaddata backup_2014_12_05.json --database="familytree"
   python manage.py migrate --noinput
-else:
+else
   python manage.py migrate --noinput
   python manage.py migrate --database="photos" --noinput
   python manage.py migrate --database="familytree" --noinput
