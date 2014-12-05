@@ -50,3 +50,4 @@ docs/_build/
 /backup/
 .DS_Store
 *.db
+media/
