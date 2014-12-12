@@ -4,7 +4,7 @@ class PhotologueRouter(object):
     A router to control all database operations on models in the
     photologue application.
     """
-    apps = ["photologue"]
+    apps = ["photologue", "site"]
     using = "photos"
     
     def db_for_read(self, model, **hints):
