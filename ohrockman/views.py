@@ -36,7 +36,7 @@ def family_member_search(request):
 
 def gallery(request):
 
-    wedding_photos = Gallery.objects.filter(tags='wedding')
+    wedding_photos = Gallery.objects.filter(tags='family')
 
     template = loader.get_template('gallery.html')
     context = RequestContext(request, {
