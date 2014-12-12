@@ -98,6 +98,7 @@ DATABASES = {
     },
 }
 DATABASE_ROUTERS = [
+    'ohrockman.db_router.PhotologueRouter',
     'familytree.db_router.FamilytreeRouter',
 ]
 
