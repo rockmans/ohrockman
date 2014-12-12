@@ -15,5 +15,5 @@ urlpatterns = patterns('',
     url(r'^reunion/$', views.reunion),
     url(r'^gallery/$', views.gallery),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^photologue/', include('photologue.urls')),
+    url(r'^photologue/', include('photologue.urls', namespace="photologue")),
 )
