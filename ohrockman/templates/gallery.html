@@ -34,7 +34,7 @@
 
         {% for photo in gallery.public %}
             <span class="gallery-photo">
-                <a class="fancybox" caption="{{ photo.caption }}" rel="group" href="{{ photo.get_display_url }}"><img src="{{ photo.get_thumbnail_url }}" alt="{{ photo.title }}"/></a>
+                <a class="fancybox" caption="{{ photo.caption }}" rel="group" href="{{ photo.get_display_url }}"><img src="{{ photo.get_test_url }}" alt="{{ photo.title }}"/></a>
             </span>
         {% endfor %}
     </div>
