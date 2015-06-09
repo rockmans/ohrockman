@@ -52,6 +52,3 @@ else
   python manage.py migrate --database="familytree" --noinput
 fi
 python manage.py collectstatic --noinput
-
-cp -f "$WORKSPACE/jenkins/nginx.conf" "/etc/nginx/sites-enabled/$PROJECT_NAME.conf"
-cp -f "$WORKSPACE/jenkins/uwsgi_$APP_ENV.ini" "/usr/local/uwsgi/confs/${PROJECT_NAME}_$APP_ENV.ini"
