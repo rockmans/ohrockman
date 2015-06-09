@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     url(r'^familytree/(?P<member_id>\d+)/$', views.family_member),
     url(r'^familytree/search', views.family_member_search),
     url(r'^reunion/$', views.reunion),
-    url(r'^gallery/$', views.gallery),
+    #url(r'^gallery/$', views.gallery),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^photologue/', include('photologue.urls', namespace="photologue")),
 )
